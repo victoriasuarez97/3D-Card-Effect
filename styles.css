@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+    width: 100%;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+.container {
+    margin: auto;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 0%;
+}
+
+.card {
+    min-height: 80vh;
+    width: 30rem;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    padding: 0rem 5rem;
+    transform-style: preserve-3d;
+}
+
+.album {
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.75s ease-out;
+}
+
+.album img {
+    margin: 50px 0px;
+    width: 20rem;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.75s ease-out;
+}
+
+.info h1 {
+    font-size: 3rem;
+    margin: 15px 0px;
+    transition: all 0.75s ease-out;
+}
+
+.info h3 {
+    font-size: 1.3rem;
+    padding: 10px;
+    color: #585858;
+    font-weight: lighter;
+    transition: all 0.75s ease-out;
+}
+
+p {
+    font-size: 16px;
+    padding: 5px;
+    color: #585858;
+    font-weight: lighter;
+    transition: all 0.75s ease-out;
+}
+
+button {
+    background: #f979c6;
+    color: #ffffff;
+    border-radius: 30px;
+    border: none;
+    padding: 5% 50%;
+    cursor: pointer;
+    margin: 50px 0px;
+    font-weight: bolder;
+    transition: all 0.75s ease-out;
+}
+
+button:hover {
+    background: #fc2ea9;
+}
