@@ -12,7 +12,7 @@ body {
     perspective: 1000px;
 }
 
-.container {
+#container {
     margin: auto;
     width: 40%;
     display: flex;
@@ -28,6 +28,7 @@ body {
     border-radius: 30px;
     padding: 0rem 5rem;
     transform-style: preserve-3d;
+    cursor: pointer;
 }
 
 .album {
@@ -45,13 +46,13 @@ body {
     transition: all 0.75s ease-out;
 }
 
-.info h1 {
+#info h1 {
     font-size: 3rem;
     margin: 15px 0px;
     transition: all 0.75s ease-out;
 }
 
-.info h3 {
+#info h3 {
     font-size: 1.3rem;
     padding: 10px;
     color: #585858;
@@ -67,18 +68,14 @@ p {
     transition: all 0.75s ease-out;
 }
 
-button {
+#stopMusicButton {
     background: #f979c6;
     color: #ffffff;
     border-radius: 30px;
     border: none;
-    padding: 5% 50%;
+    padding: 20px 70px;
     cursor: pointer;
-    margin: 50px 0px;
+    margin: 50px 50px;
     font-weight: bolder;
-    transition: all 0.75s ease-out;
-}
-
-button:hover {
-    background: #fc2ea9;
+    transition: all 0.75s ease-in-out;
 }
