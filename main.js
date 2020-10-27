@@ -33,19 +33,23 @@ container.addEventListener( 'mouseleave', (e) => {
 
 // Music
 
-function playMusic(sound) {
-    let music = document.getElementById(sound);
+function playMusic() {
+    let music = document.getElementById('music');
     music.play();
+}
 
-    createStopButton();
+function stopMusic() {
+    let music = document.getElementById('music');
+    music.pause();
+    music.currentTime = 0;
 }
 
 function createStopButton() {
-    if (!document.getElementById("diiv")) {
+    if (!document.getElementById("Sound")) {
         const button = document.createElement("button");
         button.className = "stopMusicButton";
-        button.id = "diiv";
-        button.innerHTML = "Stop";
+        button.id = "Sound";
+        button.innerHTML = "Unmute";
         document.getElementById('main').appendChild(button);
         button.classList.add("stopMusicButton", "faded-out")
 
@@ -53,10 +57,19 @@ function createStopButton() {
             button.classList.remove("faded-out");
         })
 
-        button.onclick = () => {
-            let music = document.getElementById("Diiv");
-            music.pause();
-            music.currentTime = 0;
+        button.onclick = (sound) => {
+            if (button.innerHTML = "Unmute") {
+                playMusic(sound);
+                button.innerHTML = "Mute";
+            }
+
+            if (button.innerHTML = "Mute") {
+                button.onclick = () => {
+                    stopMusic(sound);
+                    button.innerHTML = "Unmute";
+                }
+            }
         }
     }
+    
 }

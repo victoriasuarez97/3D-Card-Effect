@@ -93,7 +93,7 @@ p {
     cursor: pointer;
     margin: auto;
     font-weight: bolder;
-    transition: opacity 4000ms;
+    transition: opacity 1000ms;
     will-change: opacity;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
 }
