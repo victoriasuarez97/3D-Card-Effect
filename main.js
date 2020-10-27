@@ -5,7 +5,6 @@ const title = document.querySelector('.title');
 const subtitle = document.querySelector('.subtitle');
 const details = document.querySelector('.details');
 const album = document.querySelector('.album');
-const button = document.querySelector('#stopMusicButton');
 
 container.addEventListener('mousemove', (e) => {
     let xAxis = (window.innerWidth / 2 - e.pageX) / 10;
@@ -32,7 +31,7 @@ container.addEventListener( 'mouseleave', (e) => {
     details.style.transform = "translateZ(0px)";
 })
 
-//Music
+// Music
 
 function playMusic(sound) {
     let music = document.getElementById(sound);
@@ -40,8 +39,6 @@ function playMusic(sound) {
 
     createStopButton();
 }
-
-
 
 function createStopButton() {
     if (!document.getElementById("diiv")) {
