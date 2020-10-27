@@ -102,6 +102,10 @@ p {
     opacity: 0;
 }
 
+.stopMusicButton:focus {
+    outline: none;
+}
+
 footer {
     width: 100%;
     text-align: center;
