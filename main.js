@@ -44,13 +44,20 @@ function playMusic(sound) {
 
 
 function createStopButton() {
-    if (!document.getElementById('stopMusicButton')) {
-        const button = document.createElement('button');
-        button.id = 'stopMusicButton';
-        button.innerHTML = `Stop`;
-        document.getElementById('container').appendChild(button);
+    if (!document.getElementById("diiv")) {
+        const button = document.createElement("button");
+        button.className = "stopMusicButton";
+        button.id = "diiv";
+        button.innerHTML = "Stop";
+        document.getElementById('main').appendChild(button);
+        button.classList.add("stopMusicButton", "faded-out")
+
+        requestAnimationFrame(() => {
+            button.classList.remove("faded-out");
+        })
+
         button.onclick = () => {
-            let music = document.getElementById('Diiv');
+            let music = document.getElementById("Diiv");
             music.pause();
             music.currentTime = 0;
         }
