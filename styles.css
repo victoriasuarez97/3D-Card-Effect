@@ -32,11 +32,11 @@ body {
 }
 
 .card {
-    min-height: 80vh;
-    width: 30rem;
+    min-height: 70vh;
+    width: 500px;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
     border-radius: 30px;
-    padding: 2rem;
+    padding: 40px;
     transform-style: preserve-3d;
     cursor: pointer;
     background: #ffffff;
@@ -63,13 +63,13 @@ body {
 }
 
 #info h1 {
-    font-size: 3rem;
+    font-size: 48px;
     margin: 15px 0px;
     transition: all 0.75s ease-out;
 }
 
 #info h3 {
-    font-size: 1.3rem;
+    font-size: 25px;
     color: #585858;
     font-weight: lighter;
     transition: all 0.75s ease-out;
@@ -77,7 +77,7 @@ body {
 }
 
 p {
-    font-size: 16px;
+    font-size: 20px;
     color: #585858;
     font-weight: lighter;
     transition: all 0.75s ease-out;
@@ -107,6 +107,7 @@ p {
 }
 
 footer {
+    padding: 50px 0px;
     width: 100%;
     text-align: center;
     margin: auto;
