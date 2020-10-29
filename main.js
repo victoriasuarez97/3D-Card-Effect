@@ -31,20 +31,9 @@ container.addEventListener( 'mouseleave', (e) => {
     details.style.transform = "translateZ(0px)";
 })
 
-// Music
-
-function playMusic() {
+function createButton() {
     let music = document.getElementById('music');
-    music.play();
-}
 
-function stopMusic() {
-    let music = document.getElementById('music');
-    music.pause();
-    music.currentTime = 0;
-}
-
-function createStopButton() {
     if (!document.getElementById("Sound")) {
         const button = document.createElement("button");
         button.className = "stopMusicButton";
@@ -57,17 +46,15 @@ function createStopButton() {
             button.classList.remove("faded-out");
         })
 
-        button.onclick = (sound) => {
-            if (button.innerHTML = "Unmute") {
-                playMusic(sound);
+        button.onclick = () => {
+           if (button.innerHTML === "Unmute") {
+                music.muted = false;
+                music.play();
                 button.innerHTML = "Mute";
-            }
-
-            if (button.innerHTML = "Mute") {
-                button.onclick = () => {
-                    stopMusic(sound);
-                    button.innerHTML = "Unmute";
-                }
+            } else {
+                music.muted = true;
+                music.pause();
+                button.innerHTML = "Unmute";
             }
         }
     }
