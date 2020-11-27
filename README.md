@@ -3,8 +3,6 @@
 This *3D Card Effect* is done to show the way a product can be shown on a website. 
 First time you hover the card element, a button is created to reproduce music if you'd like to.
 
-👁️ Link: https://dreamy-minsky-3665e6.netlify.app/
-
 ## To run this locally
 
 After you clone the repo:
